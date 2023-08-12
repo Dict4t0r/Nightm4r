@@ -25,7 +25,7 @@ function App() {
   }
 
   function getEngines(){
-    fetch("https://nightm4r.onrender.com/models")
+    fetch("https://client-gg4u.onrender.com/models")
     .then(res => res.json())
     .then(data => {
       console.log(data.models.data)
@@ -47,7 +47,7 @@ function App() {
 
     const messages = chatLogNew.map((message) => message.message).join("\n")
     
-    const response = await fetch("https://nightm4r.onrender.com/", {
+    const response = await fetch("https://client-gg4u.onrender.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

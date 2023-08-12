@@ -36,7 +36,7 @@ app.post('/', async (req, res) => {
 });
 
 // Get Models Route
-app.get('/models', async (req, res) => {
+app.get('https://api.openai.com/v1/models', async (req, res) => {
 	const response = await openai.listEngines();
 	res.json({
 		models: response.data
@@ -44,6 +44,6 @@ app.get('/models', async (req, res) => {
 });
 
 // Start the server
-app.listen(port, () => {
+/* app.listen(port, () => {
 	  console.log(`Example app listening at http://localhost:${port}`)
-});
+}); */

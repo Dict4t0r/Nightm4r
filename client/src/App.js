@@ -25,7 +25,7 @@ function App() {
   }
 
   function getEngines(){
-    fetch("https://client-gg4u.onrender.com/models")
+    fetch("https://api.openai.com/v1/models")
     .then(res => res.json())
     .then(data => {
       console.log(data.models.data)

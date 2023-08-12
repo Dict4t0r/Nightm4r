@@ -22,7 +22,7 @@ app.use(require('morgan')('dev'))
 // Routing 
 
 // Primary Open AI Route
-app.post('/', async (req, res) => {
+app.post('https://api.openai.com/v1/completions', async (req, res) => {
 	const { message, currentModel, temperature } = req.body;
 	const response = await openai.createCompletion({
 		model: `${currentModel}`,// "text-davinci-003",

@@ -47,7 +47,7 @@ function App() {
 
     const messages = chatLogNew.map((message) => message.message).join("\n")
     
-    const response = await fetch("https://client-gg4u.onrender.com", {
+    const response = await fetch("https://nightm4r.onrender.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
